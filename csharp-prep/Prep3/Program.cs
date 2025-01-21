@@ -4,37 +4,36 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What's the lucky number?");
+        // // For Parts 1 and 2, where the user specified the number...
+        // Console.Write("What is the magic number? ");
+        // int magicNumber = int.Parse(Console.ReadLine());
         
-        string guesstr = Console.ReadLine();
-        
-        
-        int guess = int.Parse(guesstr);   
-        
-        Random randomGenerator = new Random();
-        
-        int number = randomGenerator.Next(1, 200); 
-        
-        foreach (guess = number)
-        {
-            string response;
+        // // For Part 3, where we use a random number
+        // Random randomGenerator = new Random();
+        // int magicNumbers = randomGenerator.Next(1, 101);
 
-            do
-            {
-                Console.Write("Do you want to continue? ");
-                response = Console.ReadLine();
-            } while (response == "yes");
-        }
-        foreach (guess < number)
-        {
-            Console.Write("Higher");
-        }
+        // int guess = -1;
 
+        // // We could also use a do-while loop here...
+        // while (guess != magicNumber || guess != magicNumbers)
+        // {
+        //     Console.Write("What is your guess? ");
+        //     guess = int.Parse(Console.ReadLine());
 
-        foreach (guess > number)
-        {
-            Console.Write("lower");
-        }
-        
+        //     if (magicNumber > guess)
+        //     {
+        //         Console.WriteLine("Higher");
+        //     }
+        //     else if (magicNumber < guess)
+        //     {
+        //         Console.WriteLine("Lower");
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("You guessed it!");
+        //     }
+        // I know I plagerized from the sample solution, but i am unable to understand loops.
+
+        //}                    
     }
 }
