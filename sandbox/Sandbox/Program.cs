@@ -43,20 +43,29 @@ class Program
         // }
 
 
-        Movie FavoriteMovie = new Movie();
-        FavoriteMovie._title= "Star Wars";
-        FavoriteMovie._year = 1977;
-        FavoriteMovie._rating = "PG";
-        FavoriteMovie._runtime = 150;
+        // Movie FavoriteMovie = new Movie();
+        // FavoriteMovie._title= "Star Wars";
+        // FavoriteMovie._year = 1977;
+        // FavoriteMovie._rating = "PG";
+        // FavoriteMovie._runtime = 150;
 
-        FavoriteMovie.Display();
+        // FavoriteMovie.Display();
 
-        DisplayMovie(FavoriteMovie);
+        // DisplayMovie(FavoriteMovie);
         
-        static void DisplayMovie(Movie aMovie)
-        {
-            Console.WriteLine($"{aMovie._title} - {aMovie._year}");
-        }
+        // static void DisplayMovie(Movie aMovie)
+        // {
+        //     Console.WriteLine($"{aMovie._title} - {aMovie._year}");
+        // }
+
+        Person p1 = new Person();
+        p1.SetName("Jerry");
+        p1.SetAge(23);
+
+        p1.Display();
+
+        string theName = p1.GetName();
+        Console.WriteLine($"The person's name was {theName}");
 
     }
 }
