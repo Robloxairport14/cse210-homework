@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 
 class Program
 {
@@ -58,14 +59,24 @@ class Program
         //     Console.WriteLine($"{aMovie._title} - {aMovie._year}");
         // }
 
-        Person p1 = new Person();
-        p1.SetName("Jerry");
-        p1.SetAge(23);
+        // Person p1 = new Person();
+        // p1.SetName("Jerry");
+        // p1.SetAge(23);
 
-        p1.Display();
+        // p1.Display();
 
-        string theName = p1.GetName();
-        Console.WriteLine($"The person's name was {theName}");
+        // string theName = p1.GetName();
+        // Console.WriteLine($"The person's name was {theName}");
 
+        Book b1 = new Book("Jurassic Park", "Michael");
+        Book b2 = new Book("Tom Sawyer", "Mark");
+
+        b1.checkOut();
+
+
+        Library theLibrary = new Library();
+        theLibrary.addBook(b1);
+        theLibrary.addBook(b2);
+        theLibrary.DisplayCatalog();
     }
 }
