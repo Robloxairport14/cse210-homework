@@ -2,105 +2,116 @@ using System;
 
 public class PromptGenerator
 {
-    public string _1;
-    public string _2;
-    public string _3;
-    public string _4;
-    public string _5;
-    public string _6;
-    public string _7;
-    public string _8;
-    public string _9;
-    public string _10;
-    public string _11;
-    public string _12;
-    public string _13;
-    public string _14;
-    public string _15;
-    public string _16;
-    public string _17;
-    public string _18;
-    public string _19;
-    public string _20;
-    public string _21;
-    public string _22;
-    public string _23;
-    public string _24;
-    public string _25;
-    public string _26;
-    public string _27;
-    public string _28;
-    public string _29;
-    public string _30;
-    public string _31;
-    public string _32;
-    public string _33;
-    public string _34;
-    public string _35;
-    public string _36;
-    public string _37;
-    public string _38;
-    public string _39;
-    public string _40;
-    public string _41;
-    public string _42;
-    public string _43;
-    public string _44;
-    public string _45;
-    public string _46;
-    public string _47;
-    public string _48;
-    public string _49;
-    public string _50;
-    public string _51;
-    public string _52;
-    public string _53;
-    public string _54;
-    public string _55;
-    public string _56;
-    public string _57;
-    public string _58;
-    public string _59;
-    public string _60;
-    public string _61;
-    public string _62;
-    public string _63;
-    public string _64;
-    public string _65;
-    public string _66;
-    public string _67;
-    public string _68;
-    public string _69;
-    public string _70;
-    public string _71;
-    public string _72;
-    public string _73;
-    public string _74;
-    public string _75;
-    public string _76;
-    public string _77;
-    public string _78;
-    public string _79;
-    public string _80;
-    public string _81;
-    public string _82;
-    public string _83;
-    public string _84;
-    public string _85;
-    public string _86;
-    public string _87;
-    public string _88;
-    public string _89;
-    public string _90;
-    public string _91;
-    public string _92;
-    public string _93;
-    public string _94;
-    public string _95;
-    public string _96;
-    public string _97;
-    public string _98;
-    public string _99;
-    public string _100;
+
+    string[] _prompts = new string[]
+    {
+        "What's the highlight of your week so far?",
+        "Did anything exciting happen to you today?",
+        "What have you been up to recently?",
+        "Have you discovered any new hobbies lately?",
+        "What's been the best part of your day?",
+        "How are you feeling today?",
+        "Any interesting plans for the weekend?",
+        "What did you have for lunch/dinner?",
+        "Did you watch any good movies or shows recently?",
+        "Have you read any good books lately?",
+        "What's your favorite way to unwind after a long day?",
+        "Any fun projects you're working on?",
+        "What's something new you learned today?",
+        "Have you visited any cool places recently?",
+        "What music have you been listening to?",
+        "Did you have any interesting conversations today?",
+        "What's the most memorable part of your day?",
+        "Any exciting news to share?",
+        "How's the weather treating you?",
+        "Have you tried any new recipes or restaurants recently?",
+        "What's your go-to way to relax?",
+        "Any fun adventures planned?",
+        "How's work/school going for you?",
+        "What's been keeping you busy lately?",
+        "Any new goals or resolutions?",
+        "Have you picked up any new skills or talents recently?",
+        "What is something you are looking forward to?",
+        "How do you like to spend your free time?",
+        "What's the funniest thing that happened to you today?",
+        "Have you attended any events or gatherings recently?",
+        "What's your favorite way to spend a lazy Sunday?",
+        "Did you encounter any challenges today?",
+        "How do you stay motivated during the week?",
+        "Have you met anyone interesting recently?",
+        "What's your favorite way to start the day?",
+        "Any favorite podcasts or radio shows?",
+        "What's your current favorite snack?",
+        "Did you see any interesting news stories today?",
+        "How do you stay organized with your tasks?",
+        "Any interesting observations from today?",
+        "Have you been working on any creative projects?",
+        "What's your favorite way to get some fresh air?",
+        "Did you have any unexpected surprises today?",
+        "What's your favorite way to spend a rainy day?",
+        "Any exciting travel plans coming up?",
+        "How do you stay positive and motivated?",
+        "What's the best compliment you've received recently?",
+        "Have you caught up with any old friends lately?",
+        "What's your go-to way to de-stress?",
+        "Did you have any 'aha' moments today?",
+        "What's your favorite way to stay active?",
+        "How do you stay connected with loved ones?",
+        "What's your favorite way to end the day?",
+        "Did you encounter any funny or unusual situations today?",
+        "How do you manage your time effectively?",
+        "Any cool apps or tools you've discovered recently?",
+        "What's your favorite way to celebrate small victories?",
+        "Did you try anything new today?",
+        "How do you handle busy days?",
+        "Any exciting updates on your life?",
+        "What's your favorite way to boost your mood?",
+        "Did you have any meaningful conversations today?",
+        "How do you like to treat yourself?",
+        "Any interesting articles or videos you came across recently?",
+        "What's your favorite way to unwind before bed?",
+        "Did you accomplish any goals today?",
+        "How do you stay focused throughout the day?",
+        "Any inspiring quotes or thoughts on your mind?",
+        "What's the most interesting thing you learned today?",
+        "How do you handle unexpected changes in your plans?",
+        "Any fun weekend plans?",
+        "What's your favorite way to recharge?",
+        "Did you notice anything beautiful or interesting today?",
+        "How do you stay productive during the day?",
+        "Any hobbies you're passionate about?",
+        "What's your favorite way to spend quality time with others?",
+        "Did you experience any acts of kindness today?",
+        "How do you keep a positive mindset?",
+        "Any exciting discoveries or realizations?",
+        "What's your favorite way to explore new places?",
+        "Did you have any memorable interactions today?",
+        "How do you stay organized and on top of things?",
+        "Any new trends or topics you're curious about?",
+        "What's your favorite way to stay entertained?",
+        "Did you have any moments of reflection today?",
+        "How do you like to pamper yourself?",
+        "Any new routines or habits you've started?",
+        "What's your favorite way to relax after a busy day?",
+        "Did you encounter any challenges or obstacles today?",
+        "How do you stay motivated and inspired?",
+        "Any recent accomplishments you're proud of?",
+        "What's your favorite way to spend a sunny day?",
+        "Did you try anything different today?",
+        "How do you handle stressful situations?",
+        "Any new adventures on the horizon?",
+        "What's your favorite way to show appreciation to others?",
+        "Did you have any unexpected laughs today?",
+        "How do you like to stay creative?",
+        "Any fun memories from today?",
+        "What's your favorite way to stay connected with your community?"
+        };
+
+    public string GetRandomPrompt()
+    {
+        Random random = new Random();
+        int index = random.Next(_prompts.Length);
+        return _prompts[index];
+    }
     
 }
