@@ -5,15 +5,31 @@ public class Word
 
     public Word(string text)
     {
-        _text=text;
+        _text = text;
+        _isHidden = false;
     }
-    
-    public Hide(bool isHidden)
+
+    public void Hide()
     {
-        ();
+        _isHidden = true;
     }
-    public string GetDisplayContent_Word()
+
+    public bool IsHidden()
     {
-        return "";
+        return _isHidden;
     }
+
+    public string GetDisplayContentWord()
+    {
+        if (_isHidden)
+        {
+            return new string('_', _text.Length);
+            //loops through the word and replaces each character with an underscore
+        }
+        else
+        {
+            return _text;
+        }
+    }
+
 }
