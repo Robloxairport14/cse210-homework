@@ -1,0 +1,7 @@
+public class Teacher
+{
+    private int _room;
+    private string _Tgreet;
+
+    
+}
